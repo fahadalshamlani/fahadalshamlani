@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Interests Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-image: url('callofduty.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 100vh;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: -1;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+        .button, .button2 {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #49baeb;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin: 5px;
+        }
+        .button:hover, .button2:hover {
+            background-color: #37a0f0;
+        }
+        .button:active, .button2:active {
+            background-color: #37a0f0;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        h1 {
+            color: #fff; 
+        }
+        h2 {
+            color: #ddd; 
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1><em>This is my interests page</em></h1>
+        <h2>One of my interests is professional gaming, particularly in Call of Duty. Here is a short clip of my gameplay.</h2>
+        <video controls width="700" autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </main>
+    <footer>
+        <a href="projects.html">
+            <button class="button">Previous Page</button>
+        </a>
+        <a href="index.html">
+            <button class="button">Main Page</button>
+        </a>
+        <a href="mycon.html">
+            <button class="button2">Next Page</button>
+        </a>
+    </footer>
+</body>
+</html>
